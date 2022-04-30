@@ -37,8 +37,8 @@ To implement the fitness function, we relied on the soft constraints table given
 <ins>Selection method:</ins>
 
 We have 2 selection methods which we utilize in our algorithm:
--The first is to classify in terms of fitness all members of the population and to receive the best medium of the **public Schedule getFittest(int offset)**, in which we put the offset to 0 to get the best chromosome.
--The second, is implemented through **public Schedule rouletteWheelSelection(Population pop)**, which performs a selection using roulette as described in the description given to us. We select a random point of the sum of the fitness of the population and then repeatedly add the fitness until we exceed this point. Once it happens, we return the chromosome we added last.
+- The first is to classify in terms of fitness all members of the population and to receive the best medium of the **public Schedule getFittest(int offset)**, in which we put the offset to 0 to get the best chromosome.
+- The second, is implemented through **public Schedule rouletteWheelSelection(Population pop)**, which performs a selection using roulette as described in the description given to us. We select a random point of the sum of the fitness of the population and then repeatedly add the fitness until we exceed this point. Once it happens, we return the chromosome we added last.
 
 <ins>Crossover methods</ins>
 
