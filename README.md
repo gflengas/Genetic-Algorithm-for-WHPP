@@ -22,6 +22,7 @@ In our implementation, the role of the chromosome is assigned to its schedule, w
 
 ## Implementation
 <ins>Initialization:</ins>
+
 When initializing the population, we first set all shifts to '0', and then we start giving values to the shift table based on the days. Randomly we select one of the 30 employees and if he has not been assigned a shift, we assign him in order of priority: morning '1', afternoon '2', evening '3'. Once the number of people needed for the day in the morning shift is filled, we proceed to the evening and in the same way, followed up by the evening. When all shifts are full, the process starts from the beginning for the next day, until filling in the number of days provided for in the time horizon.
 
 <ins>Consistency check - absolute restrictions:</ins>
