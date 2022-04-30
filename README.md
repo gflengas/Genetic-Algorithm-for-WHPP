@@ -58,3 +58,9 @@ Regarding the criterion with which the algorithm will end the evolution, we trie
 - The first, which would be the most attractive, is to get to the point where the score would be too small (<100), in order to have an almost perfect schedule. This never happened and we ended up getting to a point where the program stopped evolving.
 - The second, which we eventually used to derive our results, was based on the number of maximum repetitions. When our algorithm exceeds the number, it stops and gives us back the best program it managed to create.
 
+## Results
+After experimenting with different values in the initial population (pop), the maximum number of repeats (MaxIter), the chances of selection - crossover - mutation, we decided to present the results of 2 typical cases, shown below:
+
+The following are indicative of the changes in the values of the best score and the mean for the combination crossoverPopulation and mutatePopulation which is the best combination result from the algorithms we implemented:
+
+The format of the respective schedule will be:
