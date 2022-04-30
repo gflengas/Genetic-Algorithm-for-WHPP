@@ -27,6 +27,9 @@ When initializing the population, we first set all shifts to '0', and then we st
 
 <ins>Consistency check - absolute restrictions:</ins>
 
+Thanks to the way we created our original population, we ensure it
+fullfills the absolute restrictions. We also created another function, **<font color="red">public int</font> evaluate ()**, which we call whenever there is a crossover and mutation, in order the new chromosomes meet these limitations
+
 <ins>Grading - elastic constraints:</ins>
 
 <ins>Selection method:</ins>
