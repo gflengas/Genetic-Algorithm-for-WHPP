@@ -18,3 +18,7 @@ while not end_condition{
           evaluate new population
 }
 ```
+In our implementation, the role of the chromosome is assigned to its schedule, whose genes are the work schedule of each employee. The schedule of each employee is characterized by the shift in which he/she works for each of his day's time horizons. The evaluation function will mainly assess the light restrictions giving a score to each possible schedule, while strict restrictions should be controlled when creating a new schedule. During crossover, 2 schedules are selected and a new one will be created, combining schedules of employees who will come from both parents, while for the mutation they will change places with a andom worker's schedule.
+
+## Implementation
+<ins>text</ins>
