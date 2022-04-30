@@ -22,9 +22,15 @@ In our implementation, the role of the chromosome is assigned to its schedule, w
 
 ## Implementation
 <ins>Initialization:</ins>
+
 <ins>Consistency check - absolute restrictions:</ins>
+
 <ins>Grading - elastic constraints:</ins>
+
 <ins>Selection method:</ins>
+
 <ins>Crossover methods</ins>
+
 <ins>Mutation methods:</ins>
+
 <ins>Termination criteria:</ins>
