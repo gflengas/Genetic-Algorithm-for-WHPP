@@ -32,7 +32,13 @@ fullfills the absolute restrictions. We also created another function, **public 
 
 <ins>Grading - elastic constraints:</ins>
 
+To implement the fitness function, we relied on the soft constraints table given to us, we created the **public double ScoreCalculation (Employee Empl)** function, which checks an employee's work schedule and adds them to his fitness score, the necessary units in case one of its restrictions is not observed. In the end, it returns all of these units and sets them as the fitness of this schedule. This function is repeatedly called through the **public void SchedScore ()** to calculate the overall fitness of the chromosome-schedule.
+
 <ins>Selection method:</ins>
+
+We have 2 selection methods which we utilize in our algorithm:
+--The first, **public Population crossoverBest(Population population)**, is based on the choice of the 2 best chromosomes through getFittest and then use for the 1st half the genes of the best, one for the 2nd the genes of the 2nd best.
+--The second, **public Population crossoverPopulation(Population population)**, initially chooses the best chromosome as a parent and then considering elitism and crossover ratio, utilizes the rouletteWheelSelection, for the choice of the 2nd parent and finally chooses random half-half of the parents the genes and creates the new chromosome, checks its consistency and if it is acceptable adds it to the new population. Otherwise adds parent1.
 
 <ins>Crossover methods</ins>
 
