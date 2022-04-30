@@ -37,11 +37,19 @@ To implement the fitness function, we relied on the soft constraints table given
 <ins>Selection method:</ins>
 
 We have 2 selection methods which we utilize in our algorithm:
-- The first, **public Population crossoverBest(Population population)**, is based on the choice of the 2 best chromosomes through getFittest and then use for the 1st half the genes of the best, one for the 2nd the genes of the 2nd best.
-- The second, **public Population crossoverPopulation(Population population)**, initially chooses the best chromosome as a parent and then considering elitism and crossover ratio, utilizes the rouletteWheelSelection, for the choice of the 2nd parent and finally chooses random half-half of the parents the genes and creates the new chromosome, checks its consistency and if it is acceptable adds it to the new population. Otherwise adds parent1.
+-The first is to classify in terms of fitness all members of the population and to receive the best medium of the **public Schedule getFittest(int offset)**, in which we put the offset to 0 to get the best chromosome.
+-The second, is implemented through **public Schedule rouletteWheelSelection(Population pop)**, which performs a selection using roulette as described in the description given to us. We select a random point of the sum of the fitness of the population and then repeatedly add the fitness until we exceed this point. Once it happens, we return the chromosome we added last.
 
 <ins>Crossover methods</ins>
 
+We were assigned to create 2 different crossover methods:
+- The first, **public Population crossoverBest(Population population)**, is based on the choice of the 2 best chromosomes through getFittest and then use for the 1st half the genes of the best, one for the 2nd the genes of the 2nd best.
+- The second, **public Population crossoverPopulation(Population population)**, initially chooses the best chromosome as a parent and then considering elitism and crossover ratio, utilizes the rouletteWheelSelection, for the choice of the 2nd parent and finally chooses random half-half of the parents the genes and creates the new chromosome, checks its consistency and if it is acceptable adds it to the new population. Otherwise adds parent1.
+
 <ins>Mutation methods:</ins>
+
+For the mutation, we were asked to create 2 different methods. Both are based on both Elitism and mutation rate:
+- **public Population mutatePopulation(Population pop)**, when the mutation rate is met, a random employee schedule is created and replaces its existing program.
+- **Population flipMutate(Population pop)**, when the mutation rate is satisfied, exchanges shifts of 2 random employees for a specific day.
 
 <ins>Termination criteria:</ins>
