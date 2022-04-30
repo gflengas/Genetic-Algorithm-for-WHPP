@@ -65,6 +65,14 @@ Regarding the criterion with which the algorithm will end the evolution, we trie
 ## Results
 After experimenting with different values in the initial population (pop), the maximum number of repeats (MaxIter), the chances of selection - crossover - mutation, we decided to present the results of 2 typical cases, shown below:
 
+![explanation image3](https://github.com/gflengas/Genetic-Algorithm-for-WHPP/blob/master/pictures/3.png)
+
 The following are indicative of the changes in the values of the best score and the mean for the combination crossoverPopulation and mutatePopulation which is the best combination result from the algorithms we implemented:
 
+![explanation image4](https://github.com/gflengas/Genetic-Algorithm-for-WHPP/blob/master/pictures/4%20best%20score%20per%20generation.png)
+
+![explanation image5](https://github.com/gflengas/Genetic-Algorithm-for-WHPP/blob/master/pictures/5%20avg%20score%20per%20generation.png)
+
 The format of the respective schedule will be:
+
+![explanation image6](https://github.com/gflengas/Genetic-Algorithm-for-WHPP/blob/master/pictures/6.png)
