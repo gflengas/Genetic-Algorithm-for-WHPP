@@ -53,3 +53,8 @@ For the mutation, we were asked to create 2 different methods. Both are based on
 - **Population flipMutate(Population pop)**, when the mutation rate is satisfied, exchanges shifts of 2 random employees for a specific day.
 
 <ins>Termination criteria:</ins>
+
+Regarding the criterion with which the algorithm will end the evolution, we tried 2 different versions:
+- The first, which would be the most attractive, is to get to the point where the score would be too small (<100), in order to have an almost perfect schedule. This never happened and we ended up getting to a point where the program stopped evolving.
+- The second, which we eventually used to derive our results, was based on the number of maximum repetitions. When our algorithm exceeds the number, it stops and gives us back the best program it managed to create.
+
