@@ -7,4 +7,14 @@ According to the genetic algorithm, the chromosomes of each population that have
 
 Starting with an initial population, receiving random values from the search space, the chromosomes are passed through the fitness function and the characteristics of the genes, giving it a representative value. Then based on this score, the best are selected for crossbreeding and production of offspring, synthesizing their genes and at the same time, thanks to the mutation take care to avoid the creating homogeneity in the population.
 
-General pseudocode illustrating the above is as follows
+General pseudocode illustrating the above is as follows:
+```
+Initialize population p
+evaluate p
+while not end_condition{
+          select parents
+          Crossover
+          Mutation
+          evaluate new population
+}
+```
