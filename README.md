@@ -70,9 +70,11 @@ After experimenting with different values in the initial population (pop), the m
 The following are indicative of the changes in the values of the best score and the mean for the combination crossoverPopulation and mutatePopulation which is the best combination result from the algorithms we implemented:
 
 **Best score per Generation**
+
 ![explanation image4](https://github.com/gflengas/Genetic-Algorithm-for-WHPP/blob/master/pictures/4%20best%20score%20per%20generation.png)
 
 **Average score per Generation**
+
 ![explanation image5](https://github.com/gflengas/Genetic-Algorithm-for-WHPP/blob/master/pictures/5%20avg%20score%20per%20generation.png)
 
 The format of the respective schedule will be:
