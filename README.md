@@ -1,5 +1,7 @@
 # Genetic-Algorithm-for-WHPP
-Project developed for Artificial Intelligence course in collaboration with [Emmanouela Theodoraki](https://github.com/etheodoraki)<br/>
+
+Project developed as part of the Artificial Intelligence course collaboratively by [George Flengas](https://github.com/gflengas)<br/> and [Emmanouela Theodoraki](https://github.com/etheodoraki)<br/>
+
 Using the theory of genetic algorithm, the code of this repository came to life. It includes 2 Selection methods, 2 crossover methods and 2 mutation methods.
 
 ## Correlation between Genetic Algorithm and our implementation 
